@@ -1,0 +1,40 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "E-commerce shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src",
+    "start": "node dist/",
+    "lint": "./node_modules/.bin/eslint . --fix",
+    "build": "npm run lint && babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incredible92/E-commerce-api.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Abdullahi Sulyman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/incredible92/E-commerce-api/issues"
+  },
+  "homepage": "https://github.com/incredible92/E-commerce-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/plugin-transform-async-to-generator": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
